@@ -90,7 +90,7 @@ local Input_Roundify_4px = Instance.new("ImageLabel")
 local Windows = Instance.new("Frame")
 
 imgui.Name = "imgui"
-imgui.Parent = game:GetService("CoreGui")
+if not (getgenv().compatabilitymode) then imgui.Parent = game:GetService("CoreGui") end
 
 Prefabs.Name = "Prefabs"
 Prefabs.Parent = imgui
